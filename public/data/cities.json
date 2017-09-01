@@ -1,0 +1,19 @@
+// public/data/cities.json
+// add db data in this file instead of a database
+
+
+{"cities":
+  [
+	{"city": "Mumbai",
+	 "state": "Maharashtra"
+	},
+	{"city": "Nagpur",
+	 "state": "Maharashtra"
+	},
+	{"city": "Pune",
+	 "state": "Maharashtra"
+	}
+  ]
+}
+   
+

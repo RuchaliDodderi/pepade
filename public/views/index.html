@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+
+    <!-- The below copyright comments and 2 meta tags *must* be updated by author -->
+    <!-- Copyright (c) 2017. Pepade Technologies --------------------------------- -->
+    <!-- App Name: PP App                       --------------------------------- -->
+    <!-- Page Name: index.html             --------------------------------- -->
+    <!-- Creation By: Ruchali Dodderi           --------------------------------- -->
+    <!-- Creation Date: 30/08/2017              --------------------------------- -->
+
+    <meta name="PP App" content="">
+    <meta name="Ruchali Dodderi" content="">
+
+    <base href="/">
+
+    <title>Pepade</title>
+
+    <!-- Do not change below code. Only add necessary CSS.
+    =============================================================================================== -->
+    <!-- Bootstrap CSS -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Bootstrap Dropdown Hover CSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/bootstrap-dropdownhover.min.css" rel="stylesheet">
+
+    <!-- End of Bottstrap CSS.
+    ====================================================================================================== -->
+
+    <!-- Pepade Innovations: using external font libraries -->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Pepade Innovation Colors -->
+    <!-- Blue=Water, Green=Solar, Power=Red, Oil=Orange, ECC=Yellow -->
+    <!-- Live=Orange, Prime=DeepRed, Holmes=Blue, Ace=GreenTeal, Default=DeepRed, Other=Yellow -->
+
+    <!-- Pepade Innovation Styles Code: fetch from CSS folder -->
+
+    <link href="css/bustyles.css" rel="stylesheet">
+    <link href="css/navpurple.css" rel="stylesheet">
+
+	<style>
+		/* avoid any code here. move all styles to CSS folder */
+	</style>
+
+    <!-- --------------------------------------- END OF Pepade Innovation Style ------------------------------------- -->
+
+
+  </head>
+
+  <body ng-app="ppApp" ng-controller="AppCtrl">
+
+
+     <!-- for scrollspy to work, the div-id should match href in navbar -->
+
+     <!-- Top Navigation Bar -->
+
+<nav class="navbar-purple navbar-fixed-top">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+	  <a class = "navbar-left" href="/home"> <span class="glyphicon glyphicon-th" aria-lable="Main Home" aria-hidden="true"></span> </a>
+	  <a class = "navbar-left" href="/home"> <span class="glyphicon glyphicon-home" aria-lable="App Home" aria-hidden="true"></span> </a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Search</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown"  data-hover="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+          <span class="glyphicon glyphicon-th" aria-lable="iThemes" aria-hidden="true"></span> pepConsumer
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/sosb" style="letter-spacing:0px;">Order Booking.</a></li>
+            <li><a href="#" style="letter-spacing:0px;">Order History</a></li>
+            <li><a href="/smsc" style="letter-spacing:0px;">Smart Contract Quotes</a></li>
+            <li><a href="#" style="letter-spacing:0px;">Preferences</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown"  data-hover="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+          <span class="glyphicon glyphicon-th" aria-lable="Industries" aria-hidden="true"></span> pepDeliverer
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+
+            <li><a href="/nene">New Orders</a></li>
+            <li><a href="/desc">Smart Contracts</a></li>
+            <li><a href="#">Active PePaDeTags</a></li>
+            <li><a href="#">Contract History</a></li>
+            <li><a href="#">Preferences</a></li>
+
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown"  data-hover="dropdown" aria-haspopup="true" aria-expanded="true" href="#">
+          <span class="glyphicon glyphicon-th" aria-lable="Platforms" aria-hidden="true"></span> pepPlatforms
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">pepParcel</a></li>
+            <li><a href="#">pepDevice</a></li>
+            <li><a href="#">pepVehicle</a></li>
+            <li><a href="#">pepAnalytics</a></li>
+            <li><a href="#">pepAssurance</a></li>
+
+          </ul>
+        </li>
+
+
+         <li class="dropdown">
+			  <a href="#">pepAdmin <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+				<li><a href="#">Consumer Management</a></li>
+				<li><a href="#">Device Management</a></li>
+				<li><a href="#">Deliverer Management</a></li>
+				<li><a href="#">Contracts Dashboard</a></li>
+				<li><a href="#">Configurations</a></li>
+				<li><a href="#">Settings</a></li>
+
+	          </ul>
+		 </li>
+
+
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown"  data-hover="dropdown" aria-haspopup="true" aria-expanded="true" href="#">
+          <span class="glyphicon glyphicon-th" aria-lable="Recipes" aria-hidden="true"></span> pepRecipes
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">HOW-TO: Platform Recipes</a></li>
+            <li><a href="#">HOW-TO: Apps Recipes</a></li>
+            <li><a href="#">HOW-TO: Desktop Setup</a></li>
+            <li><a href="#">HOW-TO: Azure Setup</a></li>
+            <li><a href="#">Standards</a></li>
+          </ul>
+        </li>
+
+
+
+
+        <li><a href="#about">
+          <span class="glyphicon glyphicon-th" aria-lable="About" aria-hidden="true"></span>
+	     <span class="nomobile notablet"> About </span>
+            </a>
+	   </li>
+
+        <li><a href="#settings">
+          <span class="glyphicon glyphicon-user" aria-lable="Settings" aria-hidden="true"></span>
+	     <span class="nomobile notablet"> Sign-Up </span>
+            </a>
+	   </li>
+
+        <li><a href="#login">
+          <span class="glyphicon glyphicon-log-in" aria-lable="Settings" aria-hidden="true"></span>
+	     <span class="nomobile notablet"> Login </span>
+	       </a>
+	   </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- -------------------------- ANGULAR DYNAMIC CONTENT ---------------------------------------------------------- -->
+
+<div ng-view></div>
+
+<!-- ----------- ContainerLast: Footer ------------- -->
+
+<div id="footer" class="container-fluid bg-blackgray footer-padding footer-font" >
+  <div class="row">
+    <div class="col-xs-4">
+	  <p><span class="glyphicon glyphicon-map-marker"></span> PePaDe Technologies, Frankfurt, Germany</p>
+	  <p><span class="glyphicon glyphicon-phone"></span> +91 40004000</p>
+	  <p><span class="glyphicon glyphicon-envelope"></span> info@pepade.com</p>
+    </div>
+    <div class="col-xs-4">
+	  <p><span class="glyphicon glyphicon-map-marker"></span> Facebook </p>
+	  <p><span class="glyphicon glyphicon-phone"></span> Twitter </p>
+	  <p><span class="glyphicon glyphicon-envelope"></span> LinkedIn </p> 
+    </div>
+    <div class="col-xs-4">
+	  <p><span class="glyphicon glyphicon-map-marker"></span> Privacy </p>
+	  <p><span class="glyphicon glyphicon-phone"></span> Terms </p>
+	  <p><span class="glyphicon glyphicon-envelope"></span> FAQ</p> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 text-center">
+		<p>Copyright. PePaDe Technologies.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ------------------------------------- Smooth Scroll Script ---------------------------------------------------- -->
+
+<script>
+</script>
+
+    <!-- Do not change below code. Only add necessary scripts.
+    ========================================================== -->
+
+    <!-- Bootstrap core JavaScript
+    ========================================================== -->
+    <!-- Bootstrap references: add at the end for faster loading of page -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Dropdown Hover JS -->
+    <script src="libs/bootstrap-dropdownhover.min.js"></script>
+
+    <!-- Angular JavaScript
+    ========================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+
+     <! -- ethereum scripts
+     ======================  -->
+     <script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+
+    <!-- App JavaScripts
+    ========================================================== -->
+    <script src="js/app.js"></script>
+    <script src="js/appRoutes.js"></script>
+    <script src="js/controllers/AppCtrl.js"></script>
+    <script src="js/controllers/AssetCtrl.js"></script>
+    <script src="js/factories/AppFactory.js"></script>
+     <script src="js/factories/CityFactory.js"></script>
+    <script src="js/pepadeEth.js"></script>
+
+
+  </body>
+</html>

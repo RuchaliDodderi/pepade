@@ -1,0 +1,21 @@
+// public/data/asset.json
+// add db data in this file instead of a database
+
+{"assets":
+   [
+
+	{"assettype": "meter",
+	 "assetid": 1001,
+	 "assetprice": 10000
+	},
+	{"assettype": "meter",
+	 "assetid": 1002,
+	 "assetprice": 10000
+	},
+	{"assettype": "meter",
+	 "assetid": 1003,
+	 "assetprice": 10000
+	}
+   ]  
+}
+

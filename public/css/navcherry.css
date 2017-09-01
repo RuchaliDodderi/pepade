@@ -1,0 +1,169 @@
+/* --------------------------------------------------- navbar cherry: begin -------------------------------------------------------- */
+
+/* navbar */
+.navbar-cherry {
+    background-color: #9f022b;  /* deep cherry */
+    border-color: #9f022b; 
+    margin-bottom: 0;
+    z-index: 9999;
+    border: 0;
+    font-size: 10px !important;
+    letter-spacing: 2px;
+    border-radius: 0;
+    min-height: 30px !important;
+}
+/* title */
+.navbar-cherry .navbar-brand {
+    color: #ffffff; /* white */
+    font-size: 10px !important;
+    padding-top:5px !important; 
+    padding-bottom:0 !important;
+    height: 30px;
+}
+.navbar-cherry .navbar-brand:hover,
+.navbar-cherry .navbar-brand:focus {
+    color: #9f022b; /* deep cherry */
+    background-color: #E7E7E7;
+}
+/* link */
+.navbar-cherry .navbar-nav > li > a {
+    color: #ffffff; /* white */
+      padding-top:5px !important; 
+      padding-bottom:0 !important;
+      height: 30px;
+}
+.navbar-cherry .navbar-nav > li > a:hover,
+.navbar-cherry .navbar-nav > li > a:focus {
+    color: #9f022b; /* deep cherry */
+}
+.navbar-cherry .navbar-nav > .active > a, 
+.navbar-cherry .navbar-nav > .active > a:hover, 
+.navbar-cherry .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-cherry .navbar-nav > .open > a, 
+.navbar-cherry .navbar-nav > .open > a:hover, 
+.navbar-cherry .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-cherry .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+    font-size: 10px;
+}
+.navbar-cherry .navbar-nav > .dropdown > a:hover .caret,
+.navbar-cherry .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #9f022b;
+    border-bottom-color: #9f022b;
+}
+.navbar-cherry .navbar-nav > .open > a .caret, 
+.navbar-cherry .navbar-nav > .open > a:hover .caret, 
+.navbar-cherry .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+.navbar-cherry .navbar-nav .open .dropdown-menu > li > a {
+        color: #9f022b;
+	   font-size: 10px;
+}
+.navbar-cherry .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-cherry .navbar-nav .open .dropdown-menu > li > a:focus {
+	   color: #a1127d; /* mulberry */
+}
+
+.navbar-cherry .navbar-header .navbar-left a, .navbar-cherry .navbar-right a{
+     position: relative;
+	top: 0px;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     padding-right: 5px;
+     padding-left: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+     margin-right: 5px;
+     margin-left: 5px;
+     color: white;
+}
+
+.navbar-cherry .navbar-left .glyphicon {
+     position: relative;
+	top: 0px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-right: 0px;
+     padding-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+     margin-right: 5px;
+     margin-left: 5px;
+     color: white;
+}
+
+.navbar-cherry .navbar-right .glyphicon {
+     position: relative;
+	top: 0px;
+     padding-top: 0px;
+     padding-bottom: 0px;
+     padding-right: 0px;
+     padding-left: 0px;
+	margin-top: 0px;
+	margi	n-bottom: 0px;
+     margin-right: 0px;
+     margin-left: 0px;
+     color: white;
+}
+
+.navbar-cherry .navbar-header .navbar-left a:hover,  .navbar-cherry .navbar-right a:hover, .navbar-cherry .glyphicon:hover {
+    background-color: #ffffff;
+    color: #a1127d; /* 9f022b cherry */
+}
+
+/* mobile version */
+.navbar-cherry .navbar-toggle {
+     border-color: #a1127d; /* mulberry */
+position: relative;
+float: right;
+padding: 0px 5px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 15px;
+background-color: transparent;
+background-image: none;
+border: 0px solid transparent;
+border-radius: 0px;
+min-height: 30px;
+}
+
+.navbar-cherry .navbar-toggle:hover,
+.navbar-cherry .navbar-toggle:focus {
+    background-color: #a1127d; /* mulberry */
+}
+.navbar-cherry .navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 1px;
+  background-color: #cccccc;
+  border-radius: 1px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+@media (max-width: 767px) {
+    .navbar-cherry .navbar-nav .open .dropdown-menu > li > a {
+        color: #777; /* grey on deep cherry background */
+   padding-top: 0px;
+   padding-bottom: 0px;
+    }
+    .navbar-cherry .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-cherry .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #a1127d; /* mulberry */
+    }
+}
+
+
+
+/* -------------------------------------------------------- navbar end --------------------------------------------------- */
+

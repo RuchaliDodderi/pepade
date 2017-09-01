@@ -1,0 +1,129 @@
+<!-- public/views/sosb.html -->
+<!-- content of this file gets added to index.html which is the main page for our SPA -->
+<!-- define variables that will be filled up by the controller -->
+
+
+<div id="frmOrderBooking" class="container-fluid bg-white text-center" header-padding>
+	<br>
+	<h3> Peer-to-Peer Parcel Delivery: New Order Booking</h3>
+
+	<form novalidate class="form-horizontal" action="">
+
+		<!-- start two column row -->
+		<div class="form-group">
+
+			<!-- start left column -->
+			<div class="col-sm-6">
+				<div class="form-group">
+					<label class="control-label col-sm-3" for="senderfromaddress">From Address:</label>
+					<div class="col-sm-9">
+						<input type="text" id="senderfromaddress"  name="senderfromaddress" placeholder="Pickup Address" class="form-control input-sm" ng-model="sender.fromaddress">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-sm-3" for="sendertoaddress">To Address:</label>
+					<div class="col-sm-9">
+						<input type="text" id="sendertoaddress" name="sendertoaddress" placeholder="Destination Address" class="form-control input-sm" ng-model="sender.toaddress">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-sm-3" for="senderreceivername">Receiver Name:</label>
+					<div class="col-sm-9">
+						<input type="text" id="senderreceivername"  name="senderreceivername" placeholder="Receiver Name" class="form-control input-sm" ng-model="sender.receivername">
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label class="control-label col-sm-3" for="senderdeliverbydate">Deliver by Date: </label>
+					<div class="col-sm-9">
+						<input type="text" id="senderdeliverbydate" name="senderdeliverbydate" placeholder="Deliver by Date" class="form-control input-sm" ng-model="sender.deliverbydate">
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label class="control-label col-sm-3" for="senderparceltype">Parcel Type: </label>
+					<div class="col-sm-9">
+						<input type="text" id="senderparceltype" name="senderparceltype" placeholder="Parcel Contents" class="form-control input-sm" ng-model="sender.parceltype">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-sm-3" for="senderparcelsize">Parcel Size: </label>
+					<div class="col-sm-9">
+						<input type="text" id="senderparcelsize" name="senderparcelsize" placeholder="L, H, W (in cm)" class="form-control input-sm" ng-model="sender.parcelsize">
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<label class="control-label col-sm-3" for="senderparcelweight">Parcel Weight:  </label>
+					<div class="col-sm-9">
+						<input type="text" id="senderparcelweight" name="senderparcelweight" placeholder="Weight of Parcel" class="form-control input-sm" ng-model="sender.parcelweight">
+					</div>
+				</div>
+
+			</div> <!-- End left column -->
+
+			<!-- start right column -->
+			<div class="col-sm-6">
+
+				<div class="form-group">
+					<label class="control-label col-sm-6" for="sendertrackingflag">Tracking Required (Premium)? : </label>
+					<div class="col-sm-6">
+
+						<input type="checkbox" id="sendertrackingflag" name="sendertrackingflag" class="checkbox" ng-model="sender.trackingflag">
+
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-sm-6" for="senderinsuranceflag">Insurance Required (Premium)? :</label>
+					<div class="col-sm-6">
+
+						<input type="checkbox" id="senderinsuranceflag" name="senderinsuranceflag" class="checkbox" ng-model="sender.insuranceflag">
+
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-sm-6" for="sendertemperature">Temperature:</label>
+					<div class="col-sm-6">
+						<input type="text"  id="sendertemperature" name="sendertemperature" placeholder="Temperature" class="form-control input-sm" ng-model="sender.temperature">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-sm-6" for="senderhumidity">Humidity: </label>
+					<div class="col-sm-6">
+						<input type="text"  id="senderhumidity" name="senderhumidity"  placeholder="Humidity" class="form-control input-sm" ng-model="sender.humidity">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-sm-6" for="senderlight">Light: </label>
+					<div class="col-sm-6">
+						<input type="text"  id="senderlight" name="senderlight"  placeholder="Light" class="form-control input-sm" ng-model="sender.light">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="control-label col-sm-6" for="sendervibration">Vibrations:</label>
+					<div class="col-sm-6">
+						<input type="text"  id="sendervibration" name="sendervibration"  placeholder="Vibration" class="form-control input-sm" ng-model="sender.vibration">
+					</div>
+				</div>
+			</div> <!-- End right column -->
+		</div> <!-- End two column row-->
+
+		<div class="form-group">
+			<div class=col-sm-12>
+				<button type="button" class="btn btn-default" ng-click = "submitNewOrder()">Submit Order</button>
+			</div>
+		</div>
+
+	</form>
+</div>
